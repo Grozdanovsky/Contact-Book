@@ -38,8 +38,8 @@ operator = input("Vnesete telekom ili one: ")
 
 listanje_po_broevi(lista_knigi,operator)
 
-# get_emails(lista_knigi,"gmail")
-# get_emails(lista_knigi,"yahoo")
+get_emails(lista_knigi,"gmail")
+get_emails(lista_knigi,"yahoo")
 
 
 
