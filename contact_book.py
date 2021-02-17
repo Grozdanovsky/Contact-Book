@@ -6,7 +6,8 @@ class Book:
         self.__e_mail = e_mail
         self.__tel_broj = tel_broj
 
-
+    def get_email(self):
+        return self.__e_mail;
 
 
     def get_broj(self):
@@ -14,4 +15,5 @@ class Book:
 
     def get_user(self):
         print(f"Ime: {self.__ime}\nPrezime: {self.__prezime}\nE-mail: {self.__e_mail}\nTelefonski Broj: {self.__tel_broj}\n\n")
+
 

@@ -10,9 +10,16 @@ b4 = Book("Petra","Ivanovska","petraivanovska@gmail.com","076123321")
 
 b5 = Book("Filip","Gicevski","filipgicevski@yahoo.com","075555222")
 
+
 lista_knigi = [b1,b2,b3,b4,b5]
 
-operator = input("Vnesete telekom ili one: ")
+
+def get_emails(lista_knigi,email):
+    for item in lista_knigi:
+        if item.get_email().find(email) > 1:
+            print(item.get_email())
+
+
 def listanje_po_broevi(lista_broevi,operator):
 
     for item in lista_broevi:
@@ -27,12 +34,22 @@ def listanje_po_broevi(lista_broevi,operator):
                 item.get_user()
 
 
+operator = input("Vnesete telekom ili one: ")
 
 listanje_po_broevi(lista_knigi,operator)
 
+# get_emails(lista_knigi,"gmail")
+# get_emails(lista_knigi,"yahoo")
 
 
-    # da se napravi funkcija za pecatenje lista spored e-mail
-    # prima string pr "gmail" ili "yahoo" i treba da gi ispecati site mailovi koi se gmail yahoo itn
 
-    # da se ispecati lista na site broevi koi se na telekom ili one. telekom ==(070,071,072) one == (075,076,077)
+
+
+
+
+
+
+
+
+
+
