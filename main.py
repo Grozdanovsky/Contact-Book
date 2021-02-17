@@ -39,12 +39,12 @@ def listanje_po_broevi(lista_broevi, operator):
 
 # MAIN
 
-odluka = input("Sakata da pregledate preku email ili telefonski broj: ")
+odluka = input("Sakata da pregledate preku email ili preku broj: ")
 
 if (odluka == "email"):
-    emailType = input("koi mejlovi gi sakate")
+    emailType = input("koi mejlovi gi sakate? ")
     get_emails(lista_knigi, emailType)
 
 if (odluka == "broj"):
-    operatorType = input("koj operator go sakate")
+    operatorType = input("koj operator go sakate? ")
     listanje_po_broevi(lista_knigi, operatorType)
