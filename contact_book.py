@@ -8,8 +8,10 @@ class Book:
 
 
 
-    # da se napravi funkcija za pecatenje lista spored e-mail
-    # prima string pr "gmail" ili "yahoo" i treba da gi ispecati site mailovi koi se gmail yahoo itn
 
-    # da se ispecati lista na site broevi koi se na telekom ili one. telekom ==(070,071,072) one == (075,076,077)
+    def get_broj(self):
+        return self.__tel_broj
+
+    def get_user(self):
+        print(f"Ime: {self.__ime}\nPrezime: {self.__prezime}\nE-mail: {self.__e_mail}\nTelefonski Broj: {self.__tel_broj}\n\n")
 
