@@ -10,5 +10,10 @@ class Book:
         return self.__e_mail;
 
 
+    def get_broj(self):
+        return self.__tel_broj
+
+    def get_user(self):
+        print(f"Ime: {self.__ime}\nPrezime: {self.__prezime}\nE-mail: {self.__e_mail}\nTelefonski Broj: {self.__tel_broj}\n\n")
 
 
