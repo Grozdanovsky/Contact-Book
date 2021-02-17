@@ -12,34 +12,52 @@ b5 = Book("Filip","Gicevski","filipgicevski@yahoo.com","075555222")
 
 
 lista_knigi = [b1,b2,b3,b4,b5]
+odluka = input("Sakata da pregledate preku email ili telefonski broj: ")
+
+if odluka.lower() == "email":
+    email = input("vnesete mail pr: gmail, yahoo... : ")
+    def get_emails(lista_knigi,email):
+
+        if email.lower() == "yahoo":
+            for item in lista_knigi:
+                if item.get_email().find(email) > 1:
+                    item.get_user()
+
+        elif email.lower() == "gmail":
+            for item in lista_knigi:
+                if item.get_email().find(email) > 1:
+                    item.get_user()
 
 
-def get_emails(lista_knigi,email):
-    for item in lista_knigi:
-        if item.get_email().find(email) > 1:
-            print(item.get_email())
+    get_emails(lista_knigi, email)
+
+elif odluka.lower() == "telefonski broj":
+    operator = input("Vnesete telekom ili one: ")
+
+    def listanje_po_broevi(lista_broevi,operator):
+
+        for item in lista_broevi:
+
+            if operator.lower() == "telekom":
+
+                if item.get_broj()[0:3] == "070" or item.get_broj()[0:3] == "071" or item.get_broj()[0:3] == "072":
+                    item.get_user()
+
+            elif operator.lower() == "one":
+                if item.get_broj()[0:3] == "075" or item.get_broj()[0:3] == "076" or item.get_broj()[0:3] == "077":
+                    item.get_user()
 
 
-def listanje_po_broevi(lista_broevi,operator):
-
-    for item in lista_broevi:
-
-        if operator.lower() == "telekom":
-
-            if item.get_broj()[0:3] == "070" or item.get_broj()[0:3] == "071" or item.get_broj()[0:3] == "072":
-                item.get_user()
-
-        elif operator.lower() == "one":
-            if item.get_broj()[0:3] == "075" or item.get_broj()[0:3] == "076" or item.get_broj()[0:3] == "077":
-                item.get_user()
+    listanje_po_broevi(lista_knigi, operator)
 
 
-operator = input("Vnesete telekom ili one: ")
 
-listanje_po_broevi(lista_knigi,operator)
 
-# get_emails(lista_knigi,"gmail")
-# get_emails(lista_knigi,"yahoo")
+
+
+
+
+
 
 
 
